@@ -20,17 +20,17 @@ public class Worker implements Serializable{
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String name;
-	private Double dailyInCome;
+	private Double dailyIncome;
 	
 	public Worker() {
 		super();
 	}
 
-	public Worker(Long id, String name, Double dailyInCome) {
+	public Worker(Long id, String name, Double dailyIncome) {
 		super();
 		this.id = id;
 		this.name = name;
-		this.dailyInCome = dailyInCome;
+		this.dailyIncome = dailyIncome;
 	}
 	
 	// GET E SET
@@ -51,17 +51,17 @@ public class Worker implements Serializable{
 		this.name = name;
 	}
 
-	public Double getDailyInCome() {
-		return dailyInCome;
+	public Double getDailyIncome() {
+		return dailyIncome;
 	}
 
-	public void setDailyInCome(Double dailyInCome) {
-		this.dailyInCome = dailyInCome;
+	public void setDailyIncome(Double dailyIncome) {
+		this.dailyIncome = dailyIncome;
 	}
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(dailyInCome, id, name);
+		return Objects.hash(dailyIncome, id, name);
 	}
 
 	@Override
@@ -73,7 +73,7 @@ public class Worker implements Serializable{
 		if (getClass() != obj.getClass())
 			return false;
 		Worker other = (Worker) obj;
-		return Objects.equals(dailyInCome, other.dailyInCome) && Objects.equals(id, other.id)
+		return Objects.equals(dailyIncome, other.dailyIncome) && Objects.equals(id, other.id)
 				&& Objects.equals(name, other.name);
 	}
 	
