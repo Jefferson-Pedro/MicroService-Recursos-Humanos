@@ -14,7 +14,7 @@ import br.com.jeffersonpedro.hrworker.repositories.WorkerRepository;
 
 @RestController
 @RequestMapping(value = "/workers")
-public class WorkerReource {
+public class WorkerResource {
 	
 	@Autowired
 	private WorkerRepository repository;
